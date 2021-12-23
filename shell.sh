@@ -1,0 +1,1 @@
+echo "  PID   USER   CPU  MEM" > out.txt && ps -Ao pid,user,pmem,pcpu --sort=-pcpu,-pmem | head -n 4 | tail -n 1 >> out.txt
